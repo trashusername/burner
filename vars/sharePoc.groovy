@@ -9,5 +9,6 @@ def call(body) {
     node {
         echo "this code ran, here's an option:"
         echo "${config.poc}"
+        sh "echo \"Test\" > test.txt"
     }
 }
